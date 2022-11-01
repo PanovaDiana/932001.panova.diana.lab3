@@ -1,0 +1,92 @@
+*{
+	font-family: Arial;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+ A { color: white;} 
+ A:hover {
+ background-color: green;
+ }
+ 
+ ::selection {
+ 	color: white;
+    background-color: green;
+ }
+ 
+ main::first-letter { 
+ 	color:red;
+    font-size: 25px; 
+}
+ 
+ .nav {
+ 	list-style: none;
+  	background-color: red;
+  	float: left;
+  	width: 25%;
+  	color: white;
+  	padding: 30px 30px 30px 35px;
+  
+ } 
+ 
+ .nav a{
+ 	display: block;
+    margin: 10px;
+ }
+ 
+ .content{
+ 	
+ 	background-color: white;
+ 	padding: 30px;
+ 	text-align: justify;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 25%;
+ }
+ 
+ .header{
+	 background-color: green;
+     color: white;
+	 margin-bottom: 0;
+	 text-align: center;
+	 height:45px; 
+	 vertical-align: center;
+	 padding-top: 10px;
+	 padding-bottom: 10px;
+	 font-size: 25px;
+ }
+ 
+ .footer{
+	position: fixed;
+	 background-color: black;
+     color: white;
+	 text-align: center;
+	 height:25px; 
+	 vertical-align: center;
+	 padding-top: 3px;
+	 padding-bottom:3px;
+	 font-size:15px;
+	 width: 100%;
+     bottom: 0px;
+     
+ }
+ 
+ .page{
+	 background-color: red;
+     position: absolute;
+     top: 45px;
+     bottom: 25px;
+     left: 50%;
+     margin-left: -385px;
+     
+ }
+ @media (min-width:769px){
+  .page{
+	 width: 769px; 
+     margin-bottom: 25 px;
+    
+ }
+ }
