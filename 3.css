@@ -6,9 +6,13 @@
     box-sizing: border-box;
 }
 
+body{
+	min-height: 100%;
+}
+
  A { color: white;} 
  A:hover {
- background-color: green;
+ 	background-color: green;
  }
  
  ::selection {
@@ -25,7 +29,7 @@
  	list-style: none;
   	background-color: red;
   	float: left;
-  	width: 25%;
+  	width: 200px;
   	color: white;
   	padding: 30px 30px 30px 35px;
   
@@ -37,14 +41,11 @@
  }
  
  .content{
- 	
  	background-color: white;
  	padding: 30px;
  	text-align: justify;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 25%;
+    margin-left: 200px;
+	min-height: 100%;
  }
  
  .header{
@@ -60,7 +61,7 @@
  }
  
  .footer{
-	position: fixed;
+	
 	 background-color: black;
      color: white;
 	 text-align: center;
@@ -70,23 +71,21 @@
 	 padding-bottom:3px;
 	 font-size:15px;
 	 width: 100%;
-     bottom: 0px;
      
  }
  
  .page{
 	 background-color: red;
-     position: absolute;
-     top: 45px;
-     bottom: 25px;
-     left: 50%;
-     margin-left: -385px;
+     margin-left: auto;
+	 margin-right: auto;
+	 width: 769px; 
+	 min-height: 100%;
+	/* display: flex;*/
      
  }
- @media (min-width:769px){
+ @media (max-width:600px){
   .page{
-	 width: 769px; 
-     margin-bottom: 25 px;
-    
- }
+	width: inherit;
+	margin-left: 0px;
+  }
  }
